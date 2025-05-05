@@ -1,78 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="PLAS TRADERS SEBI"/>
-    <meta name="description" content="Web site of PLAS TRADERS SEBI"/>
-    <link rel="apple-touch-icon" href="./assets/favicon/apple-touch-icon.png"/>
-    <link rel="manifest" href="manifest.json"/>
-    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon">
-    <title>PLAS TRADERS SEBI</title>
-    <link rel="stylesheet" href="style.css" />
-<!-- Meta Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '2334835476868197');
-  fbq('track', 'PageView');
-  </script>
-  <noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=2334835476868197&ev=PageView&noscript=1"
-  /></noscript>
-  <!-- End Meta Pixel Code -->
-  </head>
-  <body>
-    <!-- Video Section -->
-    <div class="video-container">
-      <video preload="auto" autoplay muted loop class="bg-video" loading="lazy">
-        <source src="./assets/Video/bg-video.mp4" type="video/mp4" />
-      </video>
-      <!-- Fallback image -->
-      <div class="bg- "></div>
-    </div>
-    <!-- Card Section -->
-    <div class="card">
-      <img src="./assets/Images/img.png" alt="PLAS TRADERS SEBI" class="img" />
-      <h1 class="heading">Real Investment in Intraday stockmarket best trader</h1>
-      <div class="content">
-        <p>🏝 Stock Market Protection 🌴</p>
-        <p>👉Bitcoin, Share market</p>
-        <p>👉 Banknifty , Nifty</p>
-        <p>👉Stock market</p>
-        <p>👉 Intraday Trading</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PLAS TRADERS SEBI - Stock Market Channel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+  background: #f7f7f7 url('https://www.transparenttextures.com/patterns/white-wall-3.png') repeat;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  background: white;
+  border-radius: 16px;
+  padding: 50px 40px;
+  width: 100%;
+  max-width: 550px;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 1s ease-in-out;
+}
+
+    .container {
+      background: white;
+      border-radius: 16px;
+      padding: 50px 40px;
+      max-width: 550px;
+      text-align: center;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+      position: relative;
+      z-index: 2;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #1a237e;
+      margin-bottom: 15px;
+      animation: slideDown 0.8s ease;
+    }
+
+    .emoji {
+      font-size: 3.5rem;
+      margin-bottom: 10px;
+    }
+
+    p.description {
+      font-size: 1.15rem;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    .highlight {
+      color: #0d47a1;
+      font-weight: bold;
+    }
+
+    .features {
+      text-align: left;
+      margin: 0 auto 35px;
+      max-width: 440px;
+    }
+
+    .feature-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      opacity: 0;
+      transform: translateX(-30px);
+      animation: slideRight 0.8s ease forwards;
+    }
+
+    .feature-item:nth-child(1) { animation-delay: 0.2s; }
+    .feature-item:nth-child(2) { animation-delay: 0.4s; }
+    .feature-item:nth-child(3) { animation-delay: 0.6s; }
+
+    .feature-item svg {
+      width: 28px;
+      height: 28px;
+      fill: #1565c0;
+      margin-right: 12px;
+      transition: transform 0.3s;
+    }
+
+    .feature-item:hover svg {
+      transform: scale(1.2);
+    }
+
+    .feature-text {
+      font-size: 1rem;
+      color: #222;
+    }
+
+    a.button {
+      background: linear-gradient(135deg, #1e88e5, #42a5f5);
+      color: white;
+      padding: 15px 32px;
+      text-decoration: none;
+      border-radius: 12px;
+      font-weight: bold;
+      font-size: 1.15rem;
+      transition: 0.3s ease;
+      box-shadow: 0 0 15px rgba(33, 150, 243, 0.5);
+      animation: glowPulse 2s infinite;
+      display: inline-block;
+    }
+
+    a.button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 22px rgba(33, 150, 243, 0.8);
+    }
+
+    .footer-note {
+      margin-top: 25px;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    .disclaimer {
+      font-size: 0.75rem;
+      color: #999;
+      margin-top: 10px;
+      font-style: italic;
+    }
+
+    #year {
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes slideRight {
+      to { transform: translateX(0); opacity: 1; }
+    }
+
+    @keyframes glowPulse {
+      0%, 100% { box-shadow: 0 0 15px rgba(33, 150, 243, 0.4); }
+      50% { box-shadow: 0 0 25px rgba(33, 150, 243, 0.7); }
+    }
+  </style>
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '2334835476868197');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=2334835476868197&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+</head>
+<body>
+  <div class="container">
+    <div class="emoji">💰</div>
+    <h1>PLAS TRADERS SEBI 💸</h1>
+    <p class="description"><span class="highlight">Join our exclusive Telegram channel</span> to access insider stock tips that have doubled investments in weeks!</p>
+
+    <div class="features">
+      <div class="feature-item">
+        <svg viewBox="0 0 24 24"><path d="M12 2L2 21h20L12 2z"/></svg>
+        <div class="feature-text">High-conviction calls with past 2x results</div>
       </div>
-        <a target="_blank" href="https://t.me/+0ovknD8OaD85MmZl" class="btn">Join Channel</a>
+      <div class="feature-item">
+        <svg viewBox="0 0 24 24"><path d="M3 11h14.17l-5.59-5.59L13 4l8 8-8 8-1.41-1.41L17.17 13H3v-2z"/></svg>  
+          <div class="feature-text">Bitcoin, Share market</div>
+      </div>
+      <div class="feature-item">
+        <svg viewBox="0 0 24 24"><path d="M3 11h14.17l-5.59-5.59L13 4l8 8-8 8-1.41-1.41L17.17 13H3v-2z"/></svg>  
+        <div class="feature-text">Stock market, Intraday Trading</div>
+      </div>
     </div>
+
+    <a href="https://t.me/+0ovknD8OaD85MmZl" target="_blank" class="button">🚀 Start Doubling Now</a>
+    
     <!-- Footer Section -->
     <footer>
-      <p>&copy; <span id="year">2025</span> Balaji Ad Agency. All rights reserved. </p>
+      <p class="footer-note">Join over 5,000 smart investors already on board.</p>
+      <p class="disclaimer">Disclaimer: Past performance is not indicative of future results. Invest wisely.</p>
+      <p class="footer-note">&copy; <span id="year">2025</span> Balaji Ad Agency. All rights reserved. </p>
     </footer>
-  </body>
+  </div>
   <script>
-    // Set the current year in the footer
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    // video fallback for browsers that do not support video
-    document.addEventListener('DOMContentLoaded', function() {
-    const video = document.querySelector('.bg-video');
-
-    video.addEventListener('loadeddata', function() {
-    this.classList.add('loaded');
-    });
-
-    	// Fallback in case the video fails to load
-    setTimeout(function() {
-    if (!video.classList.contains('loaded')) {
-    video.classList.add('loaded');
-    }
-    	}, 3000); // 3 seconds timeout
-    });
+        document.getElementById('year').textContent = new Date().getFullYear();
   </script>
+</body>
 </html>
